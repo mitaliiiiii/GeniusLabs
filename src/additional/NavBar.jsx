@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 function NavBar() {
   return (
     <>
@@ -22,10 +22,10 @@ function NavBar() {
       
       <div className="w-full bg-[#0069FF38] py-2">
         <div className="flex justify-around max-w-[1440px] mx-auto text-sm md:text-base">
-          <button className="text-[#000000C4] hover:scale-110 transition">Home</button>
-          <button className="text-[#000000C4] hover:scale-110 transition">Our Curriculum</button>
-          <button className="text-[#000000C4] hover:scale-110 transition">Book a Free Demo</button>
-          <button className="text-[#000000C4] hover:scale-110 transition">Our Team</button>
+       <Link to="/">   <button className="text-[#000000C4] hover:scale-110 transition">Home</button></Link>
+       <Link to="/pages/OurCurriculum"> <button className="text-[#000000C4] hover:scale-110 transition">Our Curriculum</button></Link>   
+       <Link to="/pages/BookDemo">   <button className="text-[#000000C4] hover:scale-110 transition">Book a Free Demo</button></Link>
+      <Link to="/pages/OurTeam">     <button className="text-[#000000C4] hover:scale-110 transition">Our Team</button></Link>
         </div>
       </div>
 

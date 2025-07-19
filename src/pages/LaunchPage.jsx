@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../additional/navbar';
 import BottomBar from '../additional/BottomBar';
+import { Link } from 'react-router-dom';
 import logo from '../assets/pic.png';
 import logo2 from '../assets/pic2.png';
 import logo3 from '../assets/pic3.png';
@@ -33,9 +34,10 @@ function LaunchPage() {
           <p className="font-inter font-bold text-[40px] md:text-[60px] lg:text-[80px] bg-gradient-to-r from-[#0C2FAC] to-[#C7DEFF] bg-clip-text text-transparent leading-[1.1]">
             Cutting Edge Technologies
           </p>
-          <button className="w-full max-w-[437px] h-[60px] md:h-[72px] bg-[#C90A0A] text-white font-inter font-bold text-[24px] md:text-[32px] rounded-[15px] transition-transform duration-200 hover:scale-105 mx-auto lg:mx-0">
+          
+  <button className="w-full max-w-[437px] h-[60px] md:h-[72px] bg-[#C90A0A] text-white font-inter font-bold text-[24px] md:text-[32px] rounded-[15px] transition-transform duration-200 hover:scale-105 mx-auto lg:mx-0">
             Book a Free Demo
-          </button>
+          </button> 
         </div>
         <div className="lg:w-1/2 flex justify-center">
           <img src={logo} alt="Hero" className="w-[300px] sm:w-[450px] md:w-[550px] lg:w-[693px] h-auto object-contain" />
